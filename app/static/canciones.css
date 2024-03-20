@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.regis {
+    background-image: url(https://img.freepik.com/fotos-premium/notas-musicales-arte-musical-acuarela-creado-tecnologia-generativa-ia_545448-15354.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.titulo {
+    margin: 50px;
+    padding: 30px;
+    text-align: center;
+}
+.titulo h1 {
+    color: #000;
+    font-size: 50px;
+}
+.form_registro{
+    background-color: rgb(183, 190, 252);
+    margin: 0 auto 50px auto;
+    width: 45%;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 3px 4px rgba(250, 250, 250, 0.4);
+}
+.container_form{
+    width: 60%;
+    margin: 0 auto;
+}
+.form{
+    padding: 20px;
+}
+.form label{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.form input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+input[type="file"] {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    width: 100%;
+}
+.form .button{
+    background-color: #670075;
+    color: #fff;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form .button:hover{
+    background-color: #b946fc;
+}
+/*estilos de lista de canciones*/
+.container{
+    padding: 50px;
+    margin: 50px ;
+    background-color: blueviolet;
+    color: #fff;
+}
+.container h1{
+    text-align: center;
+    margin: 50px 0;
+}
+.table{
+    border-collapse: collapse;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.table th, .table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    color: #000;
+    
+}
+
+.botones a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 0;
+}
+.titulo_can{
+    color: #000;
+}
+.agregar{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0;
+}

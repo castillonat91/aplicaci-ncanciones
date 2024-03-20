@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.titulo{
+    text-align: center;
+    box-shadow: 2px 2px 4px 4px burlywood;
+    width: 50%;
+    margin: 100px auto;
+    padding: 10px;
+}
+form{
+    box-shadow: 2px 2px 4px 4px burlywood;
+    width: 50%;
+    margin: 0 auto 40px auto;
+    padding: 50px;
+}
+.form{
+    margin: 40px 0;
+}
+label{
+    font-size: 18px;
+    font-weight: 700;
+}
+input{
+    width: 50%;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+.button{
+    width: 40%;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: burlywood;
+    color: white;
+    font-size: 20px;
+    height: 40%;
+    cursor: pointer;
+}

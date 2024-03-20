@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://w.forfun.com/fetch/fc/fc813e57424d1ad9576f9066812f670f.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    padding: 50px;
+    width: 30%;
+    margin: 150px auto;
+    border-radius: 20px;
+    box-shadow: 2px 0px 2px 5px rgb(255, 255, 255);
+    background-color: #f3eaea48;
+}
+.container h1{
+    text-align: center;
+    margin: 20px 0 50px 0;
+    font-size: 40px;
+    color: #fff;
+}
+.datos{
+    padding: 30px;
+}
+.datos label{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.datos input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.datos1{
+    display: flex;
+}
+#button{
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: brown;
+    color: #fff;
+    margin: 20px auto;
+    cursor: pointer;
+}

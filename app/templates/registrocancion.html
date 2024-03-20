@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Canción</title>
+    <link rel="stylesheet" href="{{url_for ('static', filename='../static/canciones.css')}}">
+    <link rel="stylesheet" href="../static/canciones.css">
+</head>
+<body class="regis">
+    <div class="titulo">
+        <h1>Registro de Canciónes</h1>
+    </div>
+    <form action="/registrarCanciones" method="post" class="form_registro" enctype="multipart/form-data">
+        <div class="container_form">
+            <div class="form">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo"/>
+            </div>
+            <div class="form">
+                <label for="artista">Artista:</label>
+                <input type="text" id="artista" name="artista">
+            </div>
+            <div class="form">
+                <label for="genero">Genero:</label>
+                <input type="text" id="genero" name="genero">
+            </div>
+            <div class="form">
+                <label for="lanzamiento">Lanzamiento:</label>
+                <input type="date" id="Lanzamiento" name="lanzamiento">
+            </div>
+            <div class="form">
+                <label for="Precio">Precio:</label>
+                <input type="text" id="precio" name="precio">
+            </div>
+            <div class="form">
+                <label for="Duracion">Duracion:</label>
+                <input type="text" id="Duracion" name="duracion">
+            </div>
+            <div class="form">
+                <label for="Imagen">Imagen:</label>
+                <input type="file" id="Imagen" name="imagen">
+            </div>
+
+            <div class="form">
+                <input type="submit" class="button">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
