@@ -11,14 +11,14 @@ body{
 }
 .titulo{
     text-align: center;
-    box-shadow: 2px 2px 4px 4px burlywood;
-    width: 50%;
+    box-shadow: 2px 2px 4px 4px rgb(212, 25, 140);
+    width: 40%;
     margin: 100px auto;
     padding: 10px;
 }
 form{
-    box-shadow: 2px 2px 4px 4px burlywood;
-    width: 50%;
+    box-shadow: 2px 2px 4px 4px rgb(240, 54, 122);
+    width: 40%;
     margin: 0 auto 40px auto;
     padding: 50px;
 }
@@ -30,18 +30,18 @@ label{
     font-weight: 700;
 }
 input{
-    width: 50%;
+    width: 40%;
     height: 30px;
     border: 1px solid #ccc;
 }
 .button{
-    width: 40%;
+    width: 30%;
     padding: 10px;
     border-radius: 30px;
     border: none;
-    background-color: burlywood;
+    background-color: rgb(241, 106, 199);
     color: white;
     font-size: 20px;
-    height: 40%;
+    height: 30%;
     cursor: pointer;
 }

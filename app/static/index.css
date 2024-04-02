@@ -12,7 +12,7 @@ a{
     font-size: 20px;
 }
 .container{
-    background-color: brown;
+    background-color: rgb(196, 42, 163);
     color: #fff;
     margin: 0 auto;
     padding: 10px;
@@ -54,7 +54,7 @@ a{
     color: #fff;
 }
 .container_existe{
-    background-color: brown;
+    background-color: rgb(181, 38, 121);
     padding: 50px;
     width: 80%;
     margin: auto;

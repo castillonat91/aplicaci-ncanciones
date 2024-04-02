@@ -121,7 +121,7 @@ def editar_usuario(id):
         cursor = db.cursor()
         cursor.execute("SELECT * FROM Personas WHERE idper=%s", (id,))
         data = cursor.fetchall()
-        return render_template("editar.html", usuario=data[0])
+        return render_template("editar.html", personas=data[0])
     
     
 @app.route("/eliminar/<int:id>", methods=["GET"])
@@ -137,7 +137,7 @@ def eliminar_usuario(id):
 @app.route('/listaCanciones')
 def lista_canciones():
     cursor = db.cursor()
-    cursor.execute('SELECT titulo,artista,genero,lanzamiento,precio,duracion,imagen FROM canciones')
+    cursor.execute('SELECT id_can,titulo,artista,genero,lanzamiento,precio,duracion,imagen FROM canciones')
     cancion = cursor.fetchall() 
 
     #crear lista para almacenar canciones
@@ -146,18 +146,20 @@ def lista_canciones():
         cancionlist = []
         for canciones in cancion:
             #convertir la imagen formato base64
-            imagen = base64.b64encode(canciones[6]).decode('utf-8')
+            imagen = base64.b64encode(canciones[7]).decode('utf-8')
             #agregar datos cancion a la lista
             cancionlist.append({
-                'titulo':canciones[0],
-                'artista':canciones[1],
-                'genero':canciones[2],
-                'lanzamiento':canciones[3],
-                'precio':canciones[4],
-                'duracion':canciones[5],
+
+                'id_can':canciones[0],
+                'titulo':canciones[1],
+                'artista':canciones[2],
+                'genero':canciones[3],
+                'lanzamiento':canciones[4],
+                'precio':canciones[5],
+                'duracion':canciones[6],
                 'imagen':imagen
             })
-        return render_template('listascanciones.html',  canciones = cancionlist)
+        return render_template("listascanciones.html",  canciones = cancionlist)
     else:
         return print("canciones no encontradas")
 
